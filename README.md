@@ -1,19 +1,19 @@
-# 🏋️ Sitio Web - Gimnasio [Nombre del Gimnasio]
+#  Sitio Web - Gimnasio [Nombre del Gimnasio]
 
 Trabajo Práctico anual de Diseño Web — Tecnicatura Superior en Análisis, Diseño y Desarrollo de Software
 IES N° 6.001 "Gral. Manuel Belgrano"
 
-## 📌 Descripción del proyecto
+##  Descripción del proyecto
 
 Diseño y desarrollo de un sitio web informativo para un gimnasio, que incluye
 información sobre clases, planes de membresía, entrenadores e instalaciones.
 
-## 🎯 Objetivo
+##  Objetivo
 
 Aplicar el proceso de diseño web desde la etapa preliminar (investigación,
 wireframes, mapa del sitio) hasta el desarrollo final del sitio.
 
-## 📂 Estructura del repositorio
+##  Estructura del repositorio
 
 ├── docs/
 │ ├── referencias.md # Sitios de referencia con análisis
@@ -25,26 +25,26 @@ wireframes, mapa del sitio) hasta el desarrollo final del sitio.
 └── README.md
 
 
-## 🖊️ Etapa 1: Diseño preliminar
+## Etapa 1: Diseño preliminar
 
-- [x] Intereses personales y elección del tema
-- [x] 5 sitios de referencia analizados
-- [x] Wireframes a mano (10+ secciones)
-- [x] Mapa del sitio
-- [x] Wireframe digital en Figma
+- Intereses personales y elección del tema
+- 5 sitios de referencia analizados
+- Wireframes a mano (10+ secciones)
+- Mapa del sitio
+- Wireframe digital en Figma
 
-🔗 **Wireframe en Figma:** [link acá]
+ **Wireframe en Figma:** [link acá]
 
-## 🛠️ Tecnologías (etapa de desarrollo)
+##  Tecnologías (etapa de desarrollo)
 
 - HTML5
 - CSS3
 - JavaScript
 
-## 👤 Autor
+##  Autor
 
 Ariel Reynaga
 
-## 📅 Cátedra
+##  Cátedra
 
 Diseño Web — [Año lectivo 2026]
