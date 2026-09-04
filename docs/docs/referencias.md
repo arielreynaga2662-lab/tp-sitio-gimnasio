@@ -64,3 +64,4 @@ Negativas:
 El video/imagen de fondo puede pesar y hacer más lenta la carga del sitio
 El texto "se adapta" con link en medio de la oración es confuso, no se distingue si es énfasis o enlace
 No muestra información de precio concreto, solo frases vagas como "a tu bolsillo"
+
