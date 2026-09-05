@@ -48,3 +48,5 @@ Ariel Reynaga
 ##  Cátedra
 
 Diseño Web — [Año lectivo 2026]
+
+**Mockup UI/UX en Figma:** https://www.figma.com/design/BznjGnHOYPik2CEZnX1Mys/Sin-t%C3%ADtulo?node-id=7-4&t=wD6w9pR4Cad9iphF-1
