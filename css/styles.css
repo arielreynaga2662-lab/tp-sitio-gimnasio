@@ -337,3 +337,88 @@ a {
   caption-side: bottom;
   text-align: center;
 }
+
+/* ===== 8. Equipo ===== */
+.foto-equipo {
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--rojo);
+}
+
+.rol {
+  color: var(--rojo-texto);
+  font-size: 0.9rem;
+}
+
+/* ===== 9. Contacto ===== */
+.datos-contacto li {
+  margin-bottom: 0.8rem;
+}
+
+.datos-contacto i {
+  color: var(--rojo-texto);
+  margin-right: 0.5rem;
+}
+
+.datos-contacto a {
+  color: var(--texto);
+}
+
+address {
+  font-style: normal;
+}
+
+.etiqueta-redes {
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.red-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--tarjeta);
+  color: var(--texto);
+  font-size: 1.2rem;
+}
+
+.red-social:hover {
+  background-color: var(--rojo);
+  color: #fff;
+}
+
+.formulario {
+  background-color: var(--tarjeta);
+  border: 1px solid #2a2a31;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.formulario .form-control {
+  background-color: var(--fondo);
+  border-color: #3a3a42;
+  color: var(--texto);
+}
+
+.formulario .form-control::placeholder {
+  color: #8a8a93;
+}
+
+.formulario .form-control:focus {
+  border-color: var(--rojo);
+  box-shadow: 0 0 0 0.2rem rgba(225, 6, 0, 0.3);
+}
+
+.alerta-ok {
+  color: #5ee08a;
+  font-weight: 600;
+}
