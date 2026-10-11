@@ -213,3 +213,46 @@ a {
   font-size: 0.85rem;
   letter-spacing: 1px;
 }
+
+
+/* ===== 4. Galería ===== */
+.galeria-img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.galeria-img:hover {
+  transform: scale(1.04);
+}
+
+/* ===== 5. Comentarios ===== */
+.comentario {
+  background-color: var(--tarjeta);
+  border: 1px solid #2a2a31;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.comentario small,
+.comentario blockquote {
+  color: var(--texto-suave);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  color: #fff;
+  font-weight: 700;
+}
+
+.estrellas {
+  color: #ffc107;
+  letter-spacing: 2px;
+}
