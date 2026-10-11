@@ -325,9 +325,93 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- 10. PIE DE PÁGINA -->
+          <!-- 8. ENTRENADORES / EQUIPO -->
+      <section id="equipo" class="seccion">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="etiqueta">Staff</p>
+            <h2>Entrenadores / Equipo</h2>
+            <p class="subtitulo">Profesionales capacitados para guiarte en cada paso hacia tu mejor versión física.</p>
+          </div>
+          <div class="row g-4 text-center">
+            <div class="col-6 col-lg-3">
+              <img class="foto-equipo" src="img/entrenador-juan.jpg" alt="Retrato de Juan Pérez" width="400" height="400" loading="lazy" />
+              <h3 class="h5 mt-3 mb-1">Juan Pérez</h3>
+              <p class="rol">Especialista en Musculación</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <img class="foto-equipo" src="img/entrenadora-maria.jpg" alt="Retrato de María García" width="400" height="400" loading="lazy" />
+              <h3 class="h5 mt-3 mb-1">María García</h3>
+              <p class="rol">Entrenamiento Funcional</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <img class="foto-equipo" src="img/entrenador-esteban.jpg" alt="Retrato de Esteban Russo" width="400" height="400" loading="lazy" />
+              <h3 class="h5 mt-3 mb-1">Esteban Russo</h3>
+              <p class="rol">Spinning &amp; Cardio</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <img class="foto-equipo" src="img/entrenadora-ana.jpg" alt="Retrato de Ana Belén" width="400" height="400" loading="lazy" />
+              <h3 class="h5 mt-3 mb-1">Ana Belén</h3>
+              <p class="rol">Nutricionista Deportiva</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. CONTACTO -->
+      <section id="contacto" class="seccion seccion-oscura">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="etiqueta">Contacto</p>
+            <h2>Unite a la comunidad</h2>
+            <p class="subtitulo">¿Tenés dudas o querés conocer la sede? Mandanos un mensaje y te contactamos.</p>
+          </div>
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+              <h3>Estemos en contacto</h3>
+              <p>Vení a visitarnos de lunes a sábados y pedí tu clase de prueba gratis.</p>
+              <address>
+                <ul class="list-unstyled datos-contacto">
+                  <li><i class="bi bi-envelope-fill" aria-hidden="true"></i> <a href="mailto:contacto@zonafitgym.com">contacto@zonafitgym.com</a></li>
+                  <li><i class="bi bi-telephone-fill" aria-hidden="true"></i> <a href="tel:+541112345678">+54 11 1234-5678</a></li>
+                  <li><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Av. Siempre Viva 742, Buenos Aires, Argentina</li>
+                </ul>
+              </address>
+              <p class="etiqueta-redes">Redes sociales</p>
+              <div class="d-flex gap-3">
+                <a class="red-social" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de Zonafit"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                <a class="red-social" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook de Zonafit"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                <a class="red-social" href="https://wa.me/541112345678" target="_blank" rel="noopener" aria-label="WhatsApp de Zonafit"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form id="form-contacto" class="formulario needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required />
+                  <div class="invalid-feedback">Ingresá tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="tuemail@ejemplo.com" autocomplete="email" required />
+                  <div class="invalid-feedback">Ingresá un email válido.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje acá..." required></textarea>
+                  <div class="invalid-feedback">Escribí tu mensaje.</div>
+                </div>
+                <button type="submit" class="btn btn-zona w-100">Enviar consulta</button>
+                <p id="mensaje-enviado" class="alerta-ok mt-3 mb-0 d-none" role="status">¡Gracias! Te vamos a responder a la brevedad.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     </main>
+      <!-- 10. PIE DE PÁGINA -->
     <footer class="footer">
       <div class="container text-center">
         <p class="navbar-brand mb-2"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i> ZONAFIT <span>GYM</span></p>
