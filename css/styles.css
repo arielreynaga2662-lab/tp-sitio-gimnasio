@@ -256,3 +256,84 @@ a {
   color: #ffc107;
   letter-spacing: 2px;
 }
+
+/* ===== 6. Planes ===== */
+.plan {
+  position: relative;
+  background-color: var(--tarjeta);
+  border: 1px solid #2a2a31;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.plan-destacado {
+  border: 2px solid var(--rojo);
+  box-shadow: 0 0 30px rgba(225, 6, 0, 0.3);
+}
+
+.badge-recomendado {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  background-color: var(--rojo);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.plan-desc {
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+.precio {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.precio span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--texto-suave);
+}
+
+.lista-plan {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.lista-plan li {
+  margin-bottom: 0.6rem;
+}
+
+.lista-plan i {
+  color: var(--rojo-texto);
+  margin-right: 0.4rem;
+}
+
+/* ===== 7. Horarios ===== */
+.tabla-horarios {
+  --bs-table-bg: var(--tarjeta);
+  border-color: #2a2a31;
+}
+
+.tabla-horarios thead th {
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.tabla-horarios tbody th {
+  color: var(--rojo-texto);
+}
+
+.tabla-horarios caption {
+  color: var(--texto-suave);
+  caption-side: bottom;
+  text-align: center;
+}
