@@ -150,7 +150,6 @@ a {
   font-size: 0.9rem;
 }
 
-
 /* ===== 2. Inicio (hero) ===== */
 .hero {
   padding: 8rem 0 5rem;
@@ -177,7 +176,9 @@ a {
   color: var(--texto);
   border: 1px solid #2a2a31;
   overflow: hidden;
-  transition: transform 0.3s, border-color 0.3s;
+  transition:
+    transform 0.3s,
+    border-color 0.3s;
 }
 
 .tarjeta:hover {
@@ -213,7 +214,6 @@ a {
   font-size: 0.85rem;
   letter-spacing: 1px;
 }
-
 
 /* ===== 4. Galería ===== */
 .galeria-img {
