@@ -149,3 +149,67 @@ a {
   color: var(--texto-suave);
   font-size: 0.9rem;
 }
+
+
+/* ===== 2. Inicio (hero) ===== */
+.hero {
+  padding: 8rem 0 5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+.hero .lead {
+  color: var(--texto-suave);
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  box-shadow: 0 0 40px rgba(225, 6, 0, 0.35);
+}
+
+/* ===== 3. Disciplinas ===== */
+.tarjeta {
+  background-color: var(--tarjeta);
+  color: var(--texto);
+  border: 1px solid #2a2a31;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  border-color: var(--rojo);
+}
+
+.tarjeta .card-img-top {
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.tarjeta .card-title {
+  font-size: 1.1rem;
+}
+
+.tarjeta .card-text {
+  color: var(--texto-suave);
+}
+
+.link-rojo {
+  color: var(--rojo-texto);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.link-sobre-nosotros {
+  color: var(--texto);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
