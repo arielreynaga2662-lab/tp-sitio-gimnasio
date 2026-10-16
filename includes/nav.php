@@ -1,4 +1,12 @@
-    <!-- 1. ENCABEZADO / MENÚ -->
+  <?php
+// Devuelve "active" si el enlace es de la página que se está mostrando
+function activo($pagina)
+{
+    global $pagina_actual;
+    return $pagina === $pagina_actual ? 'active' : '';
+}
+?>
+  <!-- 1. ENCABEZADO / MENÚ -->
     <header>
       <nav
         class="navbar navbar-expand-lg fixed-top"
@@ -21,27 +29,27 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link <?= activo('inicio') ?>" href="index.php">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#galeria">Grupo</a>
+                <a class="nav-link" href="index.php#galeria">Grupo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#disciplinas">Entrenamientos</a>
+                <a class="nav-link" href="index.php#disciplinas">Entrenamientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#planes">Planes</a>
+                <a class="nav-link <?= activo('planes') ?>" href="planes.php">Planes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#horarios">Horarios</a>
+                <a class="nav-link" href="planes.php#horarios">Horarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#equipo">Equipo</a>
+                <a class="nav-link <?= activo('equipo') ?>" href="equipo.php">Equipo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link <?= activo('contacto') ?>" href="contacto.php">Contacto</a>
               </li>
             </ul>
             <a class="btn btn-zona ms-lg-3" href="#planes">Empezar ahora</a>

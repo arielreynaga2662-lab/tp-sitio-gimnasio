@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Zonafit Gym | Gimnasio de musculación, funcional y clases grupales
-    </title>
+        <title><?= $titulo_pagina ?> | Zonafit Gym</title>
     <meta
       name="description"
       content="Zonafit Gym: entrená musculación, funcional y clases grupales con profesores capacitados. Conocé nuestros planes, horarios y equipo."

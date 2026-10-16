@@ -1,4 +1,6 @@
 <?php
+$titulo_pagina = "Inicio";
+$pagina_actual = "inicio";
 require_once 'includes/header.php';
 require_once 'includes/nav.php';
 ?>
