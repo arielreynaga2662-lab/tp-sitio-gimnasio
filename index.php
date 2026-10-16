@@ -1,96 +1,8 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Zonafit Gym | Gimnasio de musculación, funcional y clases grupales
-    </title>
-    <meta
-      name="description"
-      content="Zonafit Gym: entrená musculación, funcional y clases grupales con profesores capacitados. Conocé nuestros planes, horarios y equipo."
-    />
-    <meta name="author" content="Ariel Reynaga" />
-    <link
-      rel="canonical"
-      href="https://arielreynaga2662-lab.github.io/tp-sitio-gimnasio/"
-    />
-    <meta property="og:title" content="Zonafit Gym" />
-    <meta
-      property="og:description"
-      content="Transformá tu cuerpo, mejorá tu vida. Planes, horarios y clases."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="img/hero.jpg" />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-  <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-    <!-- 1. ENCABEZADO / MENÚ -->
-    <header>
-      <nav
-        class="navbar navbar-expand-lg fixed-top"
-        aria-label="Menú principal"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="#inicio">
-            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
-            ZONAFIT <span>GYM</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-            aria-controls="menu"
-            aria-expanded="false"
-            aria-label="Abrir menú"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#galeria">Grupo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#disciplinas">Entrenamientos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#planes">Planes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#horarios">Horarios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#equipo">Equipo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-            <a class="btn btn-zona ms-lg-3" href="#planes">Empezar ahora</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+<?php
+require_once 'includes/header.php';
+require_once 'includes/nav.php';
+?>
+    
 
     <main id="contenido">
       <!-- 2. INICIO (HERO) -->
@@ -709,25 +621,4 @@
         </div>
       </section>
     </main>
-    <!-- 10. PIE DE PÁGINA -->
-    <footer class="footer">
-      <div class="container text-center">
-        <p class="navbar-brand mb-2">
-          <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i> ZONAFIT
-          <span>GYM</span>
-        </p>
-        <p class="mb-0">
-          &copy; <span id="anio">2026</span> Zonafit Gym. Todos los derechos
-          reservados.
-        </p>
-      </div>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+    <?php require_once 'includes/footer.php'; ?>
