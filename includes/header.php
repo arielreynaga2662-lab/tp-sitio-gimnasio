@@ -1,9 +1,12 @@
+<?php
+require_once __DIR__ . '/../config/env.php';
+?>
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title><?= $titulo_pagina ?> | Zonafit Gym</title>
+        <title><?= $titulo_pagina ?> | <?= $_ENV['APP_NAME'] ?></title>
     <meta
       name="description"
       content="Zonafit Gym: entrená musculación, funcional y clases grupales con profesores capacitados. Conocé nuestros planes, horarios y equipo."

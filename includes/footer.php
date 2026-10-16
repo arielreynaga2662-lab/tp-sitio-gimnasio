@@ -6,7 +6,7 @@
           <span>GYM</span>
         </p>
         <p class="mb-0">
-          &copy; <span id="anio">2026</span> Zonafit Gym. Todos los derechos
+          &copy; <span id="anio">2026</span> <?= $_ENV['APP_NAME'] ?>. Todos los derechos
           reservados.
         </p>
       </div>
