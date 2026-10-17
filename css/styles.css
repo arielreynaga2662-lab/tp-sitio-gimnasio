@@ -130,7 +130,8 @@ a {
 }
 
 .navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.navbar .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
   color: var(--rojo-texto);
 }
 
