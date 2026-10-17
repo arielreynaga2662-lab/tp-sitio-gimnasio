@@ -27,8 +27,8 @@ require_once 'includes/nav.php';
                 <ul class="list-unstyled datos-contacto">
                   <li>
                     <i class="bi bi-envelope-fill" aria-hidden="true"></i>
-                    <a href="mailto:contacto@zonafitgym.com"
-                      >contacto@zonafitgym.com</a
+                    <a href="mailto:<?= $_ENV['CONTACT_EMAIL'] ?>"
+                      ><?= $_ENV['CONTACT_EMAIL'] ?></a
                     >
                   </li>
                   <li>
