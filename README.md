@@ -92,3 +92,31 @@ APP_ENV=local
 ## Autor
 
 Ariel Reynaga
+
+## Clase 5 — Procesamiento de formularios y seguridad web
+
+Todo el desarrollo de esta entrega está en la carpeta `clase5/` (copia completa del sitio PHP). Se probaron dos interacciones de formulario procesadas en el servidor.
+
+### Formulario POST — Contacto (`contacto.php`)
+
+- El formulario envía nombre, email y mensaje por `POST` a la misma página.
+- **Sanitización:** los valores se recortan con `trim()` y se imprimen con `htmlspecialchars()`, que convierte caracteres como `<` y `>` en texto inofensivo para evitar XSS.
+- **Validación server-side:** campos obligatorios y formato de email con `filter_var($email, FILTER_VALIDATE_EMAIL)`.
+- La interfaz muestra mensajes claros: una alerta roja con la lista de errores o una alerta verde de éxito.
+- Si hay errores, los campos conservan lo escrito (`value="<?= htmlspecialchars($valores['...']) ?>"`), así el usuario no reescribe todo.
+- La validación del navegador se desactivó (`novalidate`) para demostrar que es PHP quien valida.
+
+### Formulario GET — Buscador de disciplinas (`index.php`)
+
+- En la sección "Nuestras especialidades" hay un buscador que viaja por `GET` (el texto queda en la URL: `index.php?buscar=funcional`).
+- Las disciplinas están en un array PHP; `array_filter` + `stripos` filtran las que coinciden con la búsqueda, y una función `normalizar()` ignora tildes y mayúsculas.
+- La entrada también se sanitiza con `htmlspecialchars()` antes de mostrarse.
+- La página muestra cuántos resultados encontró, o "No encontramos disciplinas" si no hubo coincidencias.
+
+### Evidencias
+
+| Captura | Muestra |
+| --- | --- |
+| `docs/evidencia-tp5/post-errores.png` | Formulario POST enviado vacío: errores de validación generados por PHP |
+| `docs/evidencia-tp5/post-exito.png` | Formulario POST correcto: mensaje de éxito del servidor |
+| `docs/evidencia-tp5/get-busqueda.png` | Buscador GET con "funcional": 1 resultado, parámetro visible en la URL |
