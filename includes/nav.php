@@ -13,7 +13,7 @@ function activo($pagina)
         aria-label="Menú principal"
       >
         <div class="container">
-          <a class="navbar-brand" href="#inicio">
+          <a class="navbar-brand" href="<?= $base_ruta ?>index.php">
             <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
             ZONAFIT <span>GYM</span>
           </a>
@@ -31,28 +31,31 @@ function activo($pagina)
           <div class="collapse navbar-collapse" id="menu">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link <?= activo('inicio') ?>" href="index.php">Inicio</a>
+                <a class="nav-link <?= activo('inicio') ?>" href="<?= $base_ruta ?>index.php">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php#galeria">Grupo</a>
+                <a class="nav-link" href="<?= $base_ruta ?>index.php#galeria">Grupo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php#disciplinas">Entrenamientos</a>
+                <a class="nav-link" href="<?= $base_ruta ?>index.php#disciplinas">Entrenamientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?= activo('planes') ?>" href="planes.php">Planes</a>
+                <a class="nav-link <?= activo('planes') ?>" href="<?= $base_ruta ?>planes.php">Planes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="planes.php#horarios">Horarios</a>
+                <a class="nav-link" href="<?= $base_ruta ?>planes.php#horarios">Horarios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?= activo('equipo') ?>" href="equipo.php">Equipo</a>
+                <a class="nav-link <?= activo('equipo') ?>" href="<?= $base_ruta ?>equipo.php">Equipo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?= activo('contacto') ?>" href="contacto.php">Contacto</a>
+                <a class="nav-link <?= activo('contacto') ?>" href="<?= $base_ruta ?>contacto.php">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <?= activo('admin') ?>" href="<?= $base_ruta ?>admin/index.php">Admin</a>
               </li>
             </ul>
-            <a class="btn btn-zona ms-lg-3" href="#planes">Empezar ahora</a>
+            <a class="btn btn-zona ms-lg-3" href="<?= $base_ruta ?>planes.php#planes">Empezar ahora</a>
           </div>
         </div>
       </nav>

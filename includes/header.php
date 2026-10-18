@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/env.php';
+// Prefijo para las rutas de los recursos: '' en la raíz, '../' dentro de admin/
+$base_ruta = $base_ruta ?? '';
 ?>
 <!doctype html>
 <html lang="es">
@@ -22,8 +24,8 @@ require_once __DIR__ . '/../config/env.php';
       content="Transformá tu cuerpo, mejorá tu vida. Planes, horarios y clases."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="img/hero.jpg" />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <meta property="og:image" content="<?= $base_ruta ?>img/hero.jpg" />
+    <link rel="icon" href="<?= $base_ruta ?>img/favicon.svg" type="image/svg+xml" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -35,7 +37,7 @@ require_once __DIR__ . '/../config/env.php';
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="<?= $base_ruta ?>css/styles.css" />
   </head>
 
   <body>

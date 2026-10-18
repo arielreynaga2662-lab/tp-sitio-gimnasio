@@ -120,3 +120,39 @@ Todo el desarrollo de esta entrega está en la carpeta `clase5/` (copia completa
 | `docs/evidencia-tp5/post-errores.png` | Formulario POST enviado vacío: errores de validación generados por PHP |
 | `docs/evidencia-tp5/post-exito.png` | Formulario POST correcto: mensaje de éxito del servidor |
 | `docs/evidencia-tp5/get-busqueda.png` | Buscador GET con "funcional": 1 resultado, parámetro visible en la URL |
+## Clase 6 — Esquema relacional en MySQL
+
+Diseño de la base de datos `zonafit_gym` en la carpeta `tp6/`:
+
+- `schema.sql` — creación de la base y 6 tablas (`roles`, `planes`, `disciplinas`, `usuarios`, `membresias`, `inscripciones`) con PKs autoincrementales, FKs, índices y campos de auditoría.
+- `consultas.sql` — datos de prueba y operaciones CRUD (INSERT, SELECT con WHERE/ORDER BY, INNER JOIN, UPDATE, DELETE).
+- `NORMALIZACION.md` — documentación del proceso 1FN → 2FN → 3FN.
+
+## Clase 7 — Persistencia PHP-MySQL con PDO y módulo CRUD
+
+El sitio se conecta a la base `zonafit_gym` (diseñada en el TP 6) usando **PDO** con consultas preparadas. El módulo de administración vive en `admin/` y gestiona los **planes de membresía** del gimnasio.
+
+### Archivos
+
+- `config/conexion.php` — instancia PDO con `try-catch` (PDOException), `ERRMODE_EXCEPTION`, `FETCH_ASSOC` y `EMULATE_PREPARES = false` (sentencias preparadas reales). Las credenciales se leen del `.env` (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASS`) y el error detallado se registra en el log en vez de mostrarse en pantalla.
+- `admin/index.php` — **Read**: listado de planes con acciones Editar/Eliminar y mensajes de estado.
+- `admin/crear.php` — **Create**: formulario validado en el servidor + `INSERT` preparado (`:nombre`, `:precio`, `:descripcion`).
+- `admin/editar.php` — **Update**: `SELECT` preparado por `:id` + `UPDATE` preparado.
+- `admin/eliminar.php` — **Delete**: `DELETE` preparado por `:id`.
+
+### Seguridad
+
+- **Anti inyección SQL:** todas las consultas con datos del usuario usan sentencias preparadas con parámetros nombrados.
+- **Anti XSS:** todo valor impreso en el HTML pasa por `htmlspecialchars()`.
+- **Validación server-side:** nombre obligatorio y precio numérico mayor o igual a 0; los campos conservan lo escrito si hay error.
+- El `id` de editar/eliminar se convierte a entero con `(int)` antes de usarlo.
+
+### Integración
+
+El panel reutiliza la maquetación del sitio (`includes/header.php`, `nav.php`, `footer.php` y `css/styles.css`). Los includes ahora usan la variable `$base_ruta` para prefijar las rutas (`''` en la raíz, `'../'` dentro de `admin/`), así el menú y los estilos funcionan desde cualquier carpeta. El menú incorporó el ítem **Admin**.
+
+### Cómo probar
+
+1. Levantar Apache y MySQL en XAMPP y verificar que exista la base `zonafit_gym` (scripts de `tp6/`).
+2. Completar las variables `DB_*` en `.env` (en XAMPP: usuario `root`, contraseña vacía).
+3. Entrar a `http://localhost/tp-sitio-gimnasio/admin/` — crear, editar y eliminar planes; los cambios se reflejan al instante en la tabla.
