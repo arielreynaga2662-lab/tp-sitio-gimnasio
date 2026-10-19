@@ -26,7 +26,7 @@ $base_ruta = $base_ruta ?? '';
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="<?= $base_ruta ?>img/hero.jpg" />
-    <link rel="icon" href="<?= $base_ruta ?>img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="<?= $base_ruta ?>img/favicon.png" type="image/png" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
