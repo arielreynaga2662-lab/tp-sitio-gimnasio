@@ -51,9 +51,26 @@ function activo($pagina)
               <li class="nav-item">
                 <a class="nav-link <?= activo('contacto') ?>" href="<?= $base_ruta ?>contacto.php">Contacto</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link <?= activo('admin') ?>" href="<?= $base_ruta ?>admin/index.php">Admin</a>
-              </li>
+              <?php if (isset($_SESSION['usuario_id'])): ?>
+                <li class="nav-item">
+                  <a class="nav-link <?= activo('cuenta') ?>" href="<?= $base_ruta ?>mi-cuenta.php">Mi cuenta</a>
+                </li>
+                <?php if (($_SESSION['rol'] ?? '') === 'admin'): ?>
+                  <li class="nav-item">
+                    <a class="nav-link <?= activo('admin') ?>" href="<?= $base_ruta ?>admin/index.php">Admin</a>
+                  </li>
+                <?php endif; ?>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?= $base_ruta ?>logout.php">Cerrar sesión</a>
+                </li>
+              <?php else: ?>
+                <li class="nav-item">
+                  <a class="nav-link <?= activo('login') ?>" href="<?= $base_ruta ?>login.php">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link <?= activo('registro') ?>" href="<?= $base_ruta ?>registro.php">Registrarse</a>
+                </li>
+              <?php endif; ?>
             </ul>
             <a class="btn btn-zona ms-lg-3" href="<?= $base_ruta ?>planes.php#planes">Empezar ahora</a>
           </div>

@@ -3,6 +3,9 @@ $base_ruta       = '../';
 $titulo_pagina   = 'Editar plan';
 $pagina_actual   = 'admin';
 
+require_once '../includes/auth_guard.php';
+requerir_rol('admin', $base_ruta);
+
 require_once '../config/conexion.php';
 
 $id = (int) ($_GET['id'] ?? $_POST['id'] ?? 0);

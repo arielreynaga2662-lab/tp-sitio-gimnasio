@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/env.php';
+require_once __DIR__ . '/sesion.php';
 // Prefijo para las rutas de los recursos: '' en la raíz, '../' dentro de admin/
 $base_ruta = $base_ruta ?? '';
 ?>

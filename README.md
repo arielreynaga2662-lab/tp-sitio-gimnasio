@@ -156,3 +156,38 @@ El panel reutiliza la maquetación del sitio (`includes/header.php`, `nav.php`, 
 1. Levantar Apache y MySQL en XAMPP y verificar que exista la base `zonafit_gym` (scripts de `tp6/`).
 2. Completar las variables `DB_*` en `.env` (en XAMPP: usuario `root`, contraseña vacía).
 3. Entrar a `http://localhost/tp-sitio-gimnasio/admin/` — crear, editar y eliminar planes; los cambios se reflejan al instante en la tabla.
+
+## Clase 8 — Manejo de estado, sesiones y autenticación
+
+Módulo de autenticación completo sobre la tabla `usuarios` del TP 6: registro, login, logout y control de acceso por rol.
+
+### Base de datos
+
+`tp8/auth-usuarios.sql` adapta `usuarios` para el login: agrega la columna `rol` (`'admin'` / `'usuario'`), deja `rol_id` opcional para los registros web y crea el administrador semilla:
+
+- Email: `admin@zonafitgym.com` — Password: `admin123` (en la base queda el hash bcrypt, nunca el texto plano).
+
+### Archivos
+
+- `includes/sesion.php` — inicia la sesión una sola vez con cookie segura (`HttpOnly`, `SameSite=Lax`).
+- `registro.php` — alta de usuarios: sanitización, verifica que el email no exista, hashea la contraseña con `password_hash($password, PASSWORD_BCRYPT)` e inserta con consulta preparada y rol `usuario`.
+- `login.php` — compara la contraseña con el hash usando `password_verify()`; ante credenciales correctas ejecuta `session_regenerate_id(true)` (anti fijación de sesión) y guarda `$_SESSION['usuario_id']`, `['usuario_nombre']` y `['rol']`. Los admin van al panel, los usuarios a su cuenta. El error de credenciales es genérico ("Email o contraseña incorrectos") para no revelar qué falló.
+- `logout.php` — limpia `$_SESSION`, borra la cookie de sesión del navegador y destruye la sesión con `session_destroy()`.
+- `includes/auth_guard.php` — guardián reutilizable: `requerir_login()` redirige a `login.php?error=acceso_denegado` si no hay sesión; `requerir_rol('admin', ...)` exige además ese rol.
+- `mi-cuenta.php` — vista protegida (cualquier rol) con los datos del socio traídos de la base.
+- `admin/*.php` — las cuatro páginas del CRUD quedaron protegidas con `requerir_rol('admin')`.
+
+### Vistas protegidas y roles
+
+- `mi-cuenta.php` → requiere sesión iniciada.
+- `admin/` (index, crear, editar, eliminar) → solo rol `admin`.
+- El menú cambia según la sesión: sin loguear muestra **Iniciar sesión** y **Registrarse**; logueado muestra **Mi cuenta**, **Cerrar sesión** y **Admin** solo para administradores.
+
+### Cómo probar
+
+1. Ejecutar `tp8/auth-usuarios.sql` en phpMyAdmin (pestaña SQL).
+2. `http://localhost/tp-sitio-gimnasio/registro.php` → crear una cuenta (queda con rol `usuario`).
+3. `login.php` con el usuario nuevo → cae en **Mi cuenta**; si intenta entrar a `admin/` lo rebotá a `mi-cuenta.php?error=sin_permiso`.
+4. `login.php` con `admin@zonafitgym.com` / `admin123` → entra directo al panel de planes.
+5. Sin sesión, `admin/` redirige a `login.php?error=acceso_denegado`.
+6. **Cerrar sesión** vuelve al login; el admin queda inaccesible hasta loguearse de nuevo.

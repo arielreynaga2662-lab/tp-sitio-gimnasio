@@ -3,6 +3,9 @@ $base_ruta       = '../';
 $titulo_pagina   = 'Administrar planes';
 $pagina_actual   = 'admin';
 
+require_once '../includes/auth_guard.php';
+requerir_rol('admin', $base_ruta);
+
 require_once '../config/conexion.php';
 require_once '../includes/header.php';
 require_once '../includes/nav.php';

@@ -1,5 +1,9 @@
 <?php
 // DELETE: borra un plan por id con consulta preparada
+$base_ruta = '../';
+require_once '../includes/auth_guard.php';
+requerir_rol('admin', $base_ruta);
+
 require_once '../config/conexion.php';
 
 $id = (int) ($_GET['id'] ?? 0);
