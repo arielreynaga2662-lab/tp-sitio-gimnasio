@@ -78,7 +78,7 @@ require_once 'includes/nav.php';
       <section class="seccion">
         <div class="container" style="max-width: 640px">
           <div class="text-center mb-4">
-            <p class="etiqueta">Sumate a Zonafit</p>
+            <p class="etiqueta">Sumate a Extreme Gym</p>
             <h2 class="subtitulo">Crear cuenta</h2>
             <p>Registrate para acceder a tu panel de socio.</p>
           </div>

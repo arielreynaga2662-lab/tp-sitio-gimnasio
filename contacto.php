@@ -20,8 +20,8 @@ require_once 'includes/nav.php';
             <div class="col-lg-5">
               <h3>Estemos en contacto</h3>
               <p>
-                Vení a visitarnos de lunes a sábados y pedí tu clase de prueba
-                gratis.
+                Vení a visitarnos de lunes a viernes de 7:30 a 23:00 y sábados
+                de 9:00 a 13:00. Pedí tu clase de prueba gratis.
               </p>
               <address>
                 <ul class="list-unstyled datos-contacto">
@@ -33,7 +33,7 @@ require_once 'includes/nav.php';
                   </li>
                   <li>
                     <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-                    <a href="tel:+543872229113">+54 387 2229113</a>
+                    <a href="tel:+5493872229113">+54 9 387 222 9113</a>
                   </li>
                   <li>
                     <i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Ayacucho 720, Salta, Argentina
@@ -44,10 +44,10 @@ require_once 'includes/nav.php';
               <div class="d-flex gap-3">
                 <a
                   class="red-social"
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/extreme_salta/"
                   target="_blank"
                   rel="noopener"
-                  aria-label="Instagram de Zonafit"
+                  aria-label="Instagram de Extreme Gym"
                   ><i class="bi bi-instagram" aria-hidden="true"></i
                 ></a>
                 <a
@@ -55,15 +55,15 @@ require_once 'includes/nav.php';
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener"
-                  aria-label="Facebook de Zonafit"
+                  aria-label="Facebook de Extreme Gym"
                   ><i class="bi bi-facebook" aria-hidden="true"></i
                 ></a>
                 <a
                   class="red-social"
-                  href="https://wa.me/543872229113"
+                  href="https://wa.me/5493872229113"
                   target="_blank"
                   rel="noopener"
-                  aria-label="WhatsApp de Zonafit"
+                  aria-label="WhatsApp de Extreme Gym"
                   ><i class="bi bi-whatsapp" aria-hidden="true"></i
                 ></a>
               </div>

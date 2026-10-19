@@ -12,14 +12,14 @@ $base_ruta = $base_ruta ?? '';
         <title><?= $titulo_pagina ?> | <?= $_ENV['APP_NAME'] ?></title>
     <meta
       name="description"
-      content="Zonafit Gym: entrená musculación, funcional y clases grupales con profesores capacitados. Conocé nuestros planes, horarios y equipo."
+      content="Extreme Gym: entrená musculación, funcional y clases grupales con profesores capacitados. Conocé nuestros planes, horarios y equipo."
     />
     <meta name="author" content="Ariel Reynaga" />
     <link
       rel="canonical"
       href="https://arielreynaga2662-lab.github.io/tp-sitio-gimnasio/"
     />
-    <meta property="og:title" content="Zonafit Gym" />
+    <meta property="og:title" content="Extreme Gym" />
     <meta
       property="og:description"
       content="Transformá tu cuerpo, mejorá tu vida. Planes, horarios y clases."

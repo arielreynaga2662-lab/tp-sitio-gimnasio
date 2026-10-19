@@ -113,6 +113,16 @@ a {
   font-size: 1.3rem;
 }
 
+.logo-nav {
+  height: 56px;
+  width: auto;
+}
+
+.logo-footer {
+  height: 90px;
+  width: auto;
+}
+
 .navbar-brand i,
 .navbar-brand span {
   color: var(--rojo-texto);
@@ -355,6 +365,11 @@ a {
   font-size: 0.9rem;
 }
 
+.turno {
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
 /* ===== 9. Contacto ===== */
 .datos-contacto li {
   margin-bottom: 0.8rem;
@@ -395,6 +410,12 @@ address {
 .red-social:hover {
   background-color: var(--rojo);
   color: #fff;
+}
+
+.red-social-sm {
+  width: 36px;
+  height: 36px;
+  font-size: 0.9rem;
 }
 
 .formulario {

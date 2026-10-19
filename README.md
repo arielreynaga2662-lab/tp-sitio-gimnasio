@@ -1,4 +1,4 @@
-# Sitio Web - Zonafit Gym
+# Sitio Web - Extreme Gym
 
 Trabajo Práctico anual de Diseño Web — Tecnicatura Superior en Análisis, Diseño y Desarrollo de Software
 IES N° 6.001 "Gral. Manuel Belgrano"
@@ -7,7 +7,7 @@ IES N° 6.001 "Gral. Manuel Belgrano"
 
 ## Descripción del proyecto
 
-Sitio web informativo para el gimnasio **Zonafit Gym**, con información sobre disciplinas, galería, opiniones de socios, planes de membresía, horarios, entrenadores y un formulario de contacto.
+Sitio web informativo para el gimnasio **Extreme Gym**, con información sobre disciplinas, galería, opiniones de socios, planes de membresía, horarios, entrenadores y un formulario de contacto.
 
 En el TP 4 el sitio se migró de HTML estático a **PHP**, dividiéndolo en varias páginas con componentes reutilizables y renderizado del lado del servidor.
 
@@ -29,7 +29,7 @@ En el TP 4 el sitio se migró de HTML estático a **PHP**, dividiéndolo en vari
 Los datos de configuración no van en el código: se leen desde un archivo `.env` (nombre del sitio, email de contacto y entorno). El archivo real **no se sube al repositorio** (está en `.gitignore`); se incluye `.env.example` como plantilla:
 
 ```
-APP_NAME=Zonafit Gym
+APP_NAME=Extreme Gym
 CONTACT_EMAIL=contacto@zonafitgym.com
 APP_ENV=local
 ```

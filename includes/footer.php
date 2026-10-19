@@ -2,8 +2,11 @@
     <footer class="footer">
       <div class="container text-center">
         <p class="navbar-brand mb-2">
-          <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i> ZONAFIT
-          <span>GYM</span>
+          <img
+            src="<?= $base_ruta ?? '' ?>img/logo-extreme.png"
+            alt="Extreme Gym"
+            class="logo-footer"
+          />
         </p>
         <p class="mb-0">
           &copy; <span id="anio">2026</span> <?= $_ENV['APP_NAME'] ?>. Todos los derechos

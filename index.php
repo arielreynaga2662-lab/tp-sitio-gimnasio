@@ -24,10 +24,10 @@ require_once 'includes/nav.php';
               </p>
               <div class="d-flex flex-wrap gap-3">
                 <a class="btn btn-zona btn-lg" href="registro.php"
-                   >Quiero inscribirme</a
+                  >Quiero inscribirme</a
                 >
                 <a class="btn btn-outline-light btn-lg" href="planes.php#horarios"
-                    >Ver horarios</a
+                  >Ver horarios</a
                 >
               </div>
             </div>
@@ -133,7 +133,7 @@ require_once 'includes/nav.php';
             </div>
           </div>
           <p class="text-center mt-5 mb-0">
-            <a href="#equipo" class="link-sobre-nosotros"
+            <a href="equipo.php" class="link-sobre-nosotros"
               >Más sobre nosotros...</a
             >
           </p>
@@ -145,7 +145,7 @@ require_once 'includes/nav.php';
         <div class="container">
           <div class="text-center mb-5">
             <p class="etiqueta">Instalaciones</p>
-            <h2>Zonafit en acción</h2>
+            <h2>Extreme Gym en acción</h2>
             <p class="subtitulo">
               Un vistazo rápido a nuestro templo de entrenamiento y al
               equipamiento que te espera.
@@ -203,7 +203,7 @@ require_once 'includes/nav.php';
             <p class="etiqueta">Opiniones</p>
             <h2>Comentarios de nuestros socios</h2>
             <p class="subtitulo">
-              La experiencia real de quienes ya entrenan en Zonafit.
+              La experiencia real de quienes ya entrenan en Extreme Gym.
             </p>
           </div>
           <div class="row g-4">

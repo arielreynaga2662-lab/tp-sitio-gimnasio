@@ -113,57 +113,79 @@ require_once 'includes/nav.php';
         <div class="container">
           <div class="text-center mb-5">
             <p class="etiqueta">Horarios</p>
-            <h2>Grilla de horarios</h2>
+            <h2>Horarios del gimnasio</h2>
             <p class="subtitulo">
-              Planificá tu semana de la mejor manera con nuestras actividades
-              programadas.
+              Estamos abiertos casi todo el día para que entrenes cuando mejor
+              te quede.
             </p>
           </div>
-          <div class="table-responsive">
-            <table
-              class="table table-dark tabla-horarios align-middle text-center mb-0"
-            >
-              <caption>
-                Horarios de clases de lunes a viernes. El gimnasio abre de 7:00
-                a 23:00.
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col" class="text-start">Clase</th>
-                  <th scope="col">Lun</th>
-                  <th scope="col">Mar</th>
-                  <th scope="col">Mié</th>
-                  <th scope="col">Jue</th>
-                  <th scope="col">Vie</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start">Funcional</th>
-                  <td>08:00</td>
-                  <td>—</td>
-                  <td>08:00</td>
-                  <td>—</td>
-                  <td>08:00</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Musculación</th>
-                  <td>18:00</td>
-                  <td>18:00</td>
-                  <td>18:00</td>
-                  <td>18:00</td>
-                  <td>18:00</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">Grupales</th>
-                  <td>—</td>
-                  <td>19:00</td>
-                  <td>—</td>
-                  <td>19:00</td>
-                  <td>—</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-5">
+              <div class="table-responsive">
+                <table
+                  class="table table-dark tabla-horarios align-middle text-center mb-0"
+                >
+                  <caption>
+                    Los domingos el gimnasio permanece cerrado.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-start">Días</th>
+                      <th scope="col">Horario</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-start">Lunes a viernes</th>
+                      <td>7:30 a 23:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Sábados</th>
+                      <td>9:00 a 13:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Domingos</th>
+                      <td>Cerrado</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="table-responsive">
+                <table
+                  class="table table-dark tabla-horarios align-middle text-center mb-0"
+                >
+                  <caption>
+                    Turnos de nuestro equipo de lunes a viernes.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-start">Persona</th>
+                      <th scope="col">Rol</th>
+                      <th scope="col">Turno</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="text-start">Agustina</th>
+                      <td>Instructora</td>
+                      <td>7:30 a 13:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Ariel</th>
+                      <td>Instructor</td>
+                      <td>13:00 a 17:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="text-start">Daniel</th>
+                      <td>Dueño</td>
+                      <td>17:00 a 23:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </section>

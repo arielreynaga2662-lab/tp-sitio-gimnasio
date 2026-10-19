@@ -14,8 +14,11 @@ function activo($pagina)
       >
         <div class="container">
           <a class="navbar-brand" href="<?= $base_ruta ?>index.php">
-            <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
-            ZONAFIT <span>GYM</span>
+            <img
+              src="<?= $base_ruta ?>img/logo-extreme.png"
+              alt="Extreme Gym"
+              class="logo-nav"
+            />
           </a>
           <button
             class="navbar-toggler"
