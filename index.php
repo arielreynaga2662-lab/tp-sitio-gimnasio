@@ -23,11 +23,11 @@ require_once 'includes/nav.php';
                 comunidad que necesitás para motivarte.
               </p>
               <div class="d-flex flex-wrap gap-3">
-                <a class="btn btn-zona btn-lg" href="#planes"
-                  >Quiero inscribirme</a
+                <a class="btn btn-zona btn-lg" href="registro.php"
+                   >Quiero inscribirme</a
                 >
-                <a class="btn btn-outline-light btn-lg" href="#horarios"
-                  >Ver horarios</a
+                <a class="btn btn-outline-light btn-lg" href="planes.php#horarios"
+                    >Ver horarios</a
                 >
               </div>
             </div>
