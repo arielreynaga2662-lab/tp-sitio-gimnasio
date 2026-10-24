@@ -1,22 +1,14 @@
 <?php
-// DELETE: borra un plan por id con consulta preparada
+// ============================================================
+// TP10 - admin/eliminar.php: punto de entrada de la baja.
+// Protege la ruta y delega todo al Controlador (MVC nativo).
+// ============================================================
 $base_ruta = '../';
 require_once '../includes/auth_guard.php';
 requerir_rol('admin', $base_ruta);
 
 require_once '../config/conexion.php';
+require_once '../app/Controllers/PlanController.php';
 
-$id = (int) ($_GET['id'] ?? 0);
-
-if ($id > 0) {
-    try {
-        $stmt = $pdo->prepare('DELETE FROM planes WHERE id = :id');
-        $stmt->execute([':id' => $id]);
-    } catch (PDOException $e) {
-        error_log('Error al eliminar plan: ' . $e->getMessage());
-    }
-}
-
-header('Location: index.php?status=eliminado');
-exit;
-?>
+$controlador = new PlanController($pdo);
+$controlador->eliminar();
