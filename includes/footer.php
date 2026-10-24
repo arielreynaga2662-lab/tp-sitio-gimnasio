@@ -21,5 +21,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="<?= $base_ruta ?? '' ?>js/main.js"></script>
+    <script src="<?= $base_ruta ?? '' ?>js/busqueda.js"></script>
   </body>
 </html>

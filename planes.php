@@ -105,6 +105,47 @@ require_once 'includes/nav.php';
               </article>
             </div>
           </div>
+
+          <!-- TP9: buscador en vivo (AJAX + JSON) -->
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+              <h3 class="h4 mb-3">Buscá tu plan</h3>
+              <p class="texto-suave">
+                Escribí y los resultados se actualizan al instante, sin
+                recargar la página.
+              </p>
+              <div class="buscador-planes">
+                <label class="visually-hidden" for="inputBusqueda"
+                  >Buscar planes</label
+                >
+                <input
+                  type="search"
+                  id="inputBusqueda"
+                  class="form-control"
+                  placeholder="Ej: mensual, clases, anual..."
+                  autocomplete="off"
+                />
+              </div>
+              <p id="avisoResultados" class="d-none mt-3 texto-suave"></p>
+              <div class="table-responsive mt-4">
+                <table
+                  class="table table-dark tabla-horarios align-middle text-center mb-0"
+                >
+                  <caption>
+                    Planes disponibles según tu búsqueda.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-start">Plan</th>
+                      <th scope="col">Precio/mes</th>
+                      <th scope="col" class="text-start">Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody id="cuerpoResultados"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
